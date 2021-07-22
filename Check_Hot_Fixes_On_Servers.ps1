@@ -5,7 +5,7 @@
 
 #Тестовые данные для проверки работы скрипта
 $User = "metinvest\adm.o.shmyrin.app"
-$PWord = ConvertTo-SecureString -String "Alexandra+Grigory2030" -AsPlainText -Force
+$PWord = ConvertTo-SecureString -String "*************" -AsPlainText -Force
 $Cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord
 
 #Ввод УЗ которая имеет право на авторизацию на сервере
