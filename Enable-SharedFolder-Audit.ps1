@@ -3,7 +3,7 @@
 
 #### Create ACL for Audit ###
 $AuditUser = "Everyone"
-$AuditRules = "FullControl"
+$AuditRules = "DeleteSubdirectoriesAndFiles,Write,Delete,ChangePermissions,TakeOwnership"
 $InheritType = "ContainerInherit,ObjectInherit"
 $AuditType = "Success"
 $AccessRule = New-Object System.Security.AccessControl.FileSystemAuditRule($AuditUser,$AuditRules,$InheritType,"None",$AuditType)
